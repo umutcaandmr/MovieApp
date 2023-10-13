@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_nav"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.umutdemir.movieapp.view.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.umutdemir.movieapp.view.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.umutdemir.movieapp.view.MovieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" >
+        <action
+            android:id="@+id/action_movieDetailFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="movieId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MovieDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            tools:text="Deneme"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/movieOriginialName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            tools:text="Pizza" />
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            tools:src="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/movieVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Vote : 7.5/10  223"/>
+
+        <TextView
+            android:id="@+id/movieTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Time : 2h 12m"/>
+
+        <TextView
+            android:id="@+id/movieBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Budget : 212.000.000$"/>
+
+        <TextView
+            android:id="@+id/movieDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Date : 20/10/2022"/>
+
+        <TextView
+            android:id="@+id/movieVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/movieOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            tools:text="@tools:sample/lorem/random"
+            android:maxLines="15"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
